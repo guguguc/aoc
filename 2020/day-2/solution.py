@@ -1,9 +1,7 @@
 #!/usr/bin/python3
 
-file = "input.txt"
-lines = [line.rstrip() for line in open(file).readlines()]
-
-def preprocess() -> int:
+def preprocess(filename) -> int:
+    lines = [line.rstrip() for line in open(file).readlines()]
     data = [] 
     for line in lines:
         policy, target, passwd = line.split(sep=' ')
@@ -32,6 +30,7 @@ def part2(info) -> int:
     return ans
 
 if __name__ == "__main__":
-    data = preprocess()
+    filename = "input.txt"
+    data = preprocess(filename)
     print(f"part 1 ans is {part1(data)}")
     print(f"part 2 ans is {part2(data)}")

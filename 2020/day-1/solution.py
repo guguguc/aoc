@@ -18,6 +18,6 @@ def find_three_sum(array: list[int], target: int):
     return None
 
 if __name__ == "__main__":
-    file = "input.txt"
-    data = [int(num[:-1]) for num in open(file).readlines()]
+    filename = "input.txt"
+    data = [int(num[:-1]) for num in open(filename).readlines()]
     print("ans is {}".format(find_three_sum(data, 2020)))
