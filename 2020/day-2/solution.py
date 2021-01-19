@@ -26,7 +26,7 @@ def part2(info) -> int:
         pos1 -= 1; pos2 -= 1
         cond0 = pos1 < len(passwd) and pos2 < len(passwd)
         cond1 = (passwd[pos1] == target) ^ (passwd[pos2] == target)
-        if (cond0 and cond1): ans+= 1
+        if (cond0 and cond1): ans += 1
     return ans
 
 if __name__ == "__main__":
