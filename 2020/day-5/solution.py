@@ -38,9 +38,6 @@ def part2(plane: list[tuple]) -> int:
     return -1
 
 if __name__ == "__main__":
-    from matplotlib import pyplot
-    from pprint import pprint
-
     filename = "input.txt"
     data = preprocess(filename)
     ans1, plane = part1(data)
