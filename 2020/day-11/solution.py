@@ -14,7 +14,7 @@ class StateMachine:
         self.rows = len(mp)
         self.cols = len(mp[0])
 
-    def advance(self):
+    def advance(self, occpied_changeable_limit):
         mp = deepcopy(self.state_map)
         for row, line in enumerate(self.state_map):
             for col, state in enumerate(line):
@@ -25,7 +25,7 @@ class StateMachine:
                         mp[row][col] = occpied
                 # occupied
                 else:
-                    if self.occpied_changeable(row, col):
+                    if self.occpied_changeable(row, col, occpied_changeable_limit):
                         mp[row][col] = empty
         self.state_map = mp
 
@@ -46,7 +46,7 @@ class StateMachine:
         # input()
         return ret
 
-    def occpied_changeable(self, row, col, limit=4):
+    def occpied_changeable(self, row, col, limit):
         cnt = 0
         funcs = [
             self.left, self.right, self.up, self.down, self.left_down,
@@ -110,21 +110,6 @@ class StateMachine2(StateMachine):
                 ret = state
                 break
         return ret
-
-    def advance(self):
-        mp = deepcopy(self.state_map)
-        for row, line in enumerate(self.state_map):
-            for col, state in enumerate(line):
-                if state == floor or state == padding:
-                    continue
-                elif state == empty:
-                    if self.empty_changable(row, col):
-                        mp[row][col] = occpied
-                # occupied
-                else:
-                    if self.occpied_changeable(row, col, 5):
-                        mp[row][col] = empty
-        self.state_map = mp
 
     def left(self, row, col):
         # None if all left seats are floor
@@ -201,25 +186,41 @@ def transfer(ipt: list):
     extra_line = [padding] * len(ipt[0])
     return [extra_line] + ipt + [extra_line]
 
-
-def main():
-    ipt = [list(l.rstrip()) for l in open(filename).readlines()]
-    ipt = transfer(ipt)
-    st = StateMachine2(ipt)
-    stp = st.dump_str()
-    input()
+def part1(grid):
+    st = StateMachine(grid)
     rd = 0
+    stp = st.dump()
     while True:
-        st.advance()
+        st.advance(4)
         # st.dump_str()
         # input()
         if stp == st.dump():
             break
         stp = st.dump()
         rd += 1
-        # print(f'roud {rd}')
+        print(f'roud {rd}')
     print(st.count())
 
+def part2(grid):
+    st = StateMachine2(grid)
+    rd = 0
+    stp = st.dump()
+    while True:
+        st.advance(5)
+        # st.dump_str()
+        # input()
+        if stp == st.dump():
+            break
+        stp = st.dump()
+        rd += 1
+        print(f'roud {rd}')
+    print(st.count())
+
+def main():
+    ipt = [list(l.rstrip()) for l in open(filename).readlines()]
+    ipt = transfer(ipt)
+    # part1(ipt)
+    part2(ipt)
 
 if __name__ == '__main__':
     main()
