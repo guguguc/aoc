@@ -1,5 +1,5 @@
 My solutions in [Advent of Code 2020](https://adventofcode.com/2020)
-| Problem | Description |
+| Problem | Solution |
 | ------- | -------------- |
 | [Day-1 ](https://adventofcode.com/2020/day/1)  | [Report Repair](https://github.com/guguguc/aoc/blob/2020/day-1/solution.py) |
 | [Day-2 ](https://adventofcode.com/2020/day/2)  | [Password Philosophy](https://github.com/guguguc/aoc/blob/2020/day-2/solution.py) |
