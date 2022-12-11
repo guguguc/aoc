@@ -9,7 +9,7 @@ My solutions in [Advent of Code 2020](https://adventofcode.com/2020)
 | [Day-6 ](https://adventofcode.com/2020/day/6)  | [Custom Customs](https://github.com/guguguc/aoc/blob/2020/day-6/solution.py) |
 | [Day-7 ](https://adventofcode.com/2020/day/7)  | [Handy Haversacks](https://github.com/guguguc/aoc/blob/2020/day-7/solution.py) |
 | [Day-8 ](https://adventofcode.com/2020/day/8)  | [Handheld Halting](https://github.com/guguguc/aoc/blob/2020/day-8/solution.py) |
-| [Day-9 ](https://adventofcode.com/2020/day/9)  | [Encoding Error]((https://github.com/guguguc/aoc/blob/2020/day-9/solution.py)) |
+| [Day-9 ](https://adventofcode.com/2020/day/9)  | [Encoding Error](https://github.com/guguguc/aoc/blob/2020/day-9/solution.py) |
 | [Day-10](https://adventofcode.com/2020/day/10) | [Adapter Array](https://github.com/guguguc/aoc/blob/2020/day-10/solution.py) |
 | [Day-11](https://adventofcode.com/2020/day/11) | [Seating System](https://github.com/guguguc/aoc/blob/2020/day-11/solution.py) |
 | [Day-12](https://adventofcode.com/2020/day/12) | [Rain Risk](https://github.com/guguguc/aoc/blob/2020/day-12/solution.py) |
