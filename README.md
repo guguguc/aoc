@@ -13,3 +13,4 @@ My solutions in [Advent of Code 2020](https://adventofcode.com/2020)
 | [Day-10](https://adventofcode.com/2020/day/10) | [Adapter Array](https://github.com/guguguc/aoc/blob/2020/day-10/solution.py) |
 | [Day-11](https://adventofcode.com/2020/day/11) | [Seating System](https://github.com/guguguc/aoc/blob/2020/day-11/solution.py) |
 | [Day-12](https://adventofcode.com/2020/day/12) | [Rain Risk](https://github.com/guguguc/aoc/blob/2020/day-12/solution.py) |
+| [Day-13](https://adventofcode.com/2020/day/13) | [Rain Risk](https://github.com/guguguc/aoc/blob/2020/day-13/solution.py) |
