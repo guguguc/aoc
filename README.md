@@ -15,3 +15,4 @@ My solutions in [Advent of Code 2020](https://adventofcode.com/2020)
 | [Day-12](https://adventofcode.com/2020/day/12) | [Rain Risk](https://github.com/guguguc/aoc/blob/2020/day-12/solution.py) |
 | [Day-13](https://adventofcode.com/2020/day/13) | [Shuttle Search](https://github.com/guguguc/aoc/blob/2020/day-13/solution.py) |
 | [Day-14](https://adventofcode.com/2020/day/14) | [Docking Data](https://github.com/guguguc/aoc/blob/2020/day-14/solution.py) |
+| [Day-15](https://adventofcode.com/2020/day/15) | [Rambunctious Recitation](https://github.com/guguguc/aoc/blob/2020/day-15/solution.py) |
